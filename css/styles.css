@@ -88,3 +88,41 @@ a {
     font-size: 1.5rem;
   }
 }
+
+/* badge */
+
+.badge {
+  border-radius: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.5rem 2rem;
+  white-space: nowrap; /*prevents the badge from wrapping into the 2nd line*/
+}
+
+.badge--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.badge--secondary {
+  background-color: var(--color-secondary);
+  color: #fff;
+}
+
+.badge--small {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .badge {
+    border-radius: 25px;
+    font-size: 1.5rem;
+    /* padding: 1rem 1.5rem; */
+  }
+
+  .badge--small {
+    border-radius: 1.7rem;
+    font-size: 1.2rem;
+    /* padding: 1rem 1.2rem; */
+  }
+}
