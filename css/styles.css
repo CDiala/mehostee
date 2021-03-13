@@ -175,6 +175,15 @@ a {
   fill: var(--color-primary);
 }
 
+.icon--small {
+  height: 30px;
+  width: 30px;
+}
+
+.insert-space {
+  margin-left: 10px;
+}
+
 .icon-container {
   align-items: center;
   background: #f3f9fa;
@@ -191,11 +200,11 @@ a {
   border-radius: 45px; /*used 40px*/
   border: 0;
   cursor: pointer;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 500; /*used 600*/
-  margin: 1rem 0;
+  margin: 0.5rem;
   outline-style: none; /*omitted*/
-  padding: 25px; /*used 2rem 3rem*/
+  padding: 12px 25px; /*used 2rem 3rem*/
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -261,14 +270,68 @@ a {
 } */
 
 .button--block {
-  display: inline-block;
-  width: 100%;
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  width: 177px;
 }
 
 @media screen and (min-width: 1024px) {
   .button {
-    font-size: 1.5rem;
-    padding: 25px; /*used 2rem 3rem*/
+    /* font-size: 1.5rem; */
+    padding: 12px 15px; /*used 2rem 3rem*/
     /*width: 80%; /*omitted*/
+  }
+}
+
+/* Input */
+.input {
+  border-radius: 50px;
+  border: 0;
+  color: var(--color-heading);
+  font-size: 2rem;
+  /* margin: 5rem 5rem; */
+  outline: 0; /* shorthand form of outline-style et al */
+  padding: 1.5rem 1.5rem 1.5rem 5rem;
+  /*width: 100%; /*temp sizing to see how the style looks*/
+}
+
+.input::placeholder {
+  color: #cdcbd7;
+  font-weight: 200;
+}
+
+.input--shadow {
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 1024px) {
+  .input {
+    font-size: 1.5rem;
+    /* padding: 2.5rem 1rem 2.5rem 5rem; */
+  }
+}
+
+/* Input groups */
+
+.input-group {
+  border-radius: 45px;
+  box-shadow: 0 0 30px 20px rgba(133, 132, 132, 0.2);
+  display: flex;
+  margin: 2rem auto;
+  max-width: 670px;
+  /* width: 100%; */
+}
+
+.input-group .input {
+  border: 0;
+  box-shadow: none;
+  flex-grow: 1;
+  width: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .input-group {
+    width: 690px;
   }
 }

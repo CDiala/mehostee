@@ -7,28 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <span class="button-container">
-        <button class="button button--outline">Buy Now</button>
-    </span>
-    <button class="button button--primary">Get One Free</button>
-    <button class="button button--accent">Get Started</button>
-    <button class="button button--primary button--large">Get One Free</button>
-    <button class="button button--secondary button--medium">Get Started</button>
-    <button class="button button--accent button--small">search</button>
-    <button class="button button--outline button--large">Buy Now</button>
-
-
-    <a href="#" class="button button--primary button--large button--block">Get One Free</a>
-    <a href="#" class="button button--accent button--medium button--block">Get Started</a>
-    <a href="#" class="button button--secondary button--small button--block">search</a>
-    <a href="#" class="button button--outline button--large button--block">Buy Now</a>
-
+    <div class="input-group">
+        <!-- <span class="icon-container">
+            <svg class="icon icon--primary">
+                <use xlink:href="images/sprite.svg#clock"></use>
+            </svg>
+        </span> -->
+        <input type="text" class="input input--shadow" placeholder="Enter Domain name here ...">
+        <button class="button button--accent button--large button--block">
+            <svg class="icon icon--primary icon--small">
+                <use xlink:href="images/sprite.svg#search"></use>
+            </svg> <span class="insert-space">search</span>
+        </button>
+    </div>
 
 </body>
 
