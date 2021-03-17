@@ -5,6 +5,9 @@
   --color-heading: #1b0760;
   --color-primary: #2584ff;
   --color-secondary: #00d9ff;
+  --color-plain: #fff;
+  --color-badge-primary: #126de4;
+  --color-badge-secondary: #02cdf1;
 }
 
 *,
@@ -106,17 +109,18 @@ a {
 }
 
 .badge--primary {
-  background: var(--color-primary);
-  color: #fff;
+  background: var(--color-badge-primary);
+  color: var(--color-plain);
 }
 
 .badge--secondary {
-  background-color: var(--color-secondary);
-  color: #fff;
+  background-color: var(--color-badge-secondary);
+  color: var(--color-plain);
 }
 
 .badge--small {
   font-size: 1.6rem;
+  padding: 0.5rem 1.5rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -197,18 +201,17 @@ a {
 /* Buttons */
 
 .button {
-  border-radius: 45px; /*used 40px*/
+  border-radius: 40px; /*used 40px*/
   border: 0;
   cursor: pointer;
-  font-size: 1.5rem;
-  font-weight: 500; /*used 600*/
-  margin: 0.5rem;
+  font-size: 1.8rem;
+  font-weight: 600; /*used 600*/
+  margin: 0.5rem 0;
   outline-style: none; /*omitted*/
-  padding: 12px 25px; /*used 2rem 3rem*/
+  padding: 1.8rem 3rem; /*used 2rem 3rem*/
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
-  /*width: 80%; /*omitted*/
 }
 
 /* .button-container {
@@ -218,7 +221,7 @@ a {
 
 .button--primary {
   background: var(--color-primary); /*used color-primary*/
-  color: #fff;
+  color: var(--color-plain);
 }
 
 .button--primary:hover {
@@ -227,7 +230,7 @@ a {
 
 .button--secondary {
   background: var(--color-secondary);
-  color: #fff;
+  color: var(--color-plain);
 }
 
 .button--secondary:hover {
@@ -236,7 +239,7 @@ a {
 
 .button--accent {
   background: var(--color-accent); /*used color-primary*/
-  color: #fff;
+  color: var(--color-plain);
 }
 
 .button--accent:hover {
@@ -244,7 +247,7 @@ a {
 }
 
 .button--outline {
-  background: #fff;
+  background: var(--color-plain);
   border: 2px solid var(--color-heading);
   color: var(--color-heading);
   transition: background 0.2s, color 0.2s;
@@ -252,7 +255,7 @@ a {
 
 .button--outline:hover {
   background: var(--color-heading);
-  color: #fff;
+  color: var(--color-plain);
 }
 
 /* .button--large {
@@ -273,13 +276,13 @@ a {
   align-items: center;
   display: inline-flex;
   justify-content: center;
-  width: 177px;
+  width: 100%;
 }
 
 @media screen and (min-width: 1024px) {
   .button {
-    /* font-size: 1.5rem; */
-    padding: 12px 15px; /*used 2rem 3rem*/
+    font-size: 1.4rem;
+    /* padding: 12px 15px; used 2rem 3rem */
     /*width: 80%; /*omitted*/
   }
 }
@@ -333,5 +336,98 @@ a {
 @media screen and (min-width: 1024px) {
   .input-group {
     width: 690px;
+  }
+}
+
+/* Cards */
+
+.card {
+  border-radius: 7px;
+  box-shadow: 0 0 20px 10px rgba(134, 132, 132, 0.2);
+  overflow: hidden;
+}
+
+/* .card__body {
+} */
+
+.card__header,
+.card__body {
+  /* font-size: ; */
+  overflow-wrap: break-word;
+  padding: 2rem 2rem;
+}
+
+.card--primary .card__header {
+  background: var(--color-primary);
+  color: var(--color-plain);
+}
+
+/* The below style states "target the card__header class 
+    inside the .card--secondary class". This card--secondary 
+    was added to the div.card element in the html. You can 
+    also create a .card--secondary style and add it to the header element of the card. You'll get the same output. */
+.card--secondary .card__header {
+  background: var(--color-secondary);
+  color: var(--color-plain);
+}
+
+/* plans */
+.plan__name {
+  color: var(--color-plain);
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.plan__price {
+  font-size: 6rem;
+}
+
+.plan__billing-cycle {
+  font-size: 2.4rem;
+  font-weight: 300;
+  opacity: 0.8;
+  margin-right: 1rem;
+}
+
+.plan__description {
+  font-size: 2rem;
+  font-weight: 300;
+  display: block;
+  letter-spacing: 1px;
+}
+
+
+.plan .list__item {
+  margin-bottom: 2rem;
+}
+
+.plan--popular .card__header {
+  position: relative;
+}
+
+.plan--popular .card__header::before {
+  content: url(../images/popular.svg);
+  width: 40px;
+  position: absolute;
+  right: 4%;
+  top: -6px;
+}
+
+@media screen and (min-width: 1024px) {
+  .plan__name {
+    font-size: 1.4rem;
+  }
+
+  .plan__price {
+    font-size: 5rem;
+  }
+
+  .plan__billing-cycle {
+    font-size: 1.6rem;
+  }
+
+  .plan__description {
+    font-size: 1.7rem;
   }
 }
