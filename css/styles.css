@@ -398,7 +398,6 @@ a {
   letter-spacing: 1px;
 }
 
-
 .plan .list__item {
   margin-bottom: 2rem;
 }
@@ -433,7 +432,6 @@ a {
   }
 }
 
-
 /* Media */
 .media {
   display: flex;
@@ -450,7 +448,6 @@ a {
 .media__image {
   margin-top: 1.5rem;
 }
-
 
 /* Quote */
 
@@ -510,7 +507,7 @@ a {
   .quote {
     font-size: 2rem;
   }
-  
+
   .quote__image {
     margin-top: 0.1rem;
   }
@@ -523,5 +520,21 @@ a {
   .quote__owner__company {
     font-size: 1.6rem;
   }
+}
 
+/* grids */
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid--cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
