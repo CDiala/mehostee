@@ -597,3 +597,70 @@ a {
     margin-left: 6rem;
   }
 }
+
+/* Callouts */
+
+.callout {
+  border: 2px solid dodgerblue;
+  border-radius: 0.8rem;
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.callout--primary {
+  background-color: var(--color-primary);
+}
+
+.callout--primary,
+.callout h2 {
+  color: var(--color-plain);
+}
+
+.callout__title {
+  font-size: 3rem;
+  margin-top: 1rem;
+  text-transform: capitalize;
+}
+
+.callout__body {
+  padding: 0 1rem;
+}
+
+.callout__info {
+  font-size: 2rem;
+}
+
+.callout .button {
+  align-self: center;
+  font-size: 1.4rem;
+  justify-self: center;
+  padding: 1.8rem 7rem;
+}
+
+@media screen and (min-width: 768px) {
+  .callout {
+    padding: 2.5rem;
+    text-align: left;
+  }
+
+  .callout__title {
+    font-size: 2rem;
+    margin-top: 0;
+  }
+
+  .callout__info {
+    font-size: 1.6rem;
+  }
+
+  .callout .grid--cols-2 {
+    /* grid-template-columns: 80fr 20fr; */
+    grid-template-columns: 1fr auto;
+  }
+
+  .callout .button {
+    align-self: center;
+    font-size: 1rem;
+    justify-self: center;
+    padding: 1.5rem 4rem;
+  }
+}
