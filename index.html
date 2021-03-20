@@ -12,21 +12,39 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body style="padding: 5rem;">
-    <div class="callout callout--primary">
-        <div class="grid grid--cols-2">
-            <div class="callout__body">
-                <h2 class="callout__title">
-                    Ready to get started?
+<body>
+    <div style="border: 1px solid black;background-color: black;">
+        <div class="collapsible collapsible--primary collapsible--expanded">
+            <header class="collapsible__header">
+                <h2 class="collapsible__title">
+                    products
                 </h2>
-                <p class="callout__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore mollitia, amet
-                    quod perspiciatis
-                    obcaecati velit nulla vero harum quo quis.
-                </p>
+                <svg class="icon icon--primary collapsible__arrow">
+                    <use xlink:href="images/sprite.svg#chevron">
+                    </use>
+                </svg>
+            </header>
+            <div class="collapsible__body">
+                <ul class="list ">
+                    <li class="list__item">
+                        Word Processing Hosting</li>
+                    <li class="list__item">
+                        Free Automated WordPress
+                    </li>
+                    <li class="list__item">
+                        Migrations
+                    </li>
+                    <li class="list__item">
+                        Domain Names
+                    </li>
+                    <li class="list__item">
+                        Monthly Web Hosting
+                    </li>
+                </ul>
             </div>
-            <a href="#" class="button button--secondary">get started</a>
         </div>
     </div>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

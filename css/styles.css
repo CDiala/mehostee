@@ -664,3 +664,73 @@ a {
     padding: 1.5rem 4rem;
   }
 }
+
+/* Collapsible */
+.collapsible {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto 1fr;
+  padding: 1rem;
+}
+
+.collapsible--primary {
+  /* background-color: black; */
+}
+
+.collapsible__header {
+  align-items: center;
+  display: flex;
+  grid-area: 1 / 1 / 2 / 3;
+  text-transform: uppercase;
+}
+
+.collapsible .icon--primary {
+  fill: var(--color-plain);
+}
+
+.collapsible__title {
+  color: var(--color-plain);
+  flex-grow: 1; /*use this or set justify-content: space-between in .collapsible__header above*/
+  font-size: 3rem;
+  margin: 0;
+}
+
+.collapsible .list {
+  color: var(--color-plain);
+}
+
+.collapsible__body {
+  /*max-height is used instead of display cos we can't apply transition on display.*/
+  max-height: 0;
+  opacity: 0;
+  /* overflow is applied cos max-height doesn't make the ul disappear, it results to an overflow. */
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.collapsible__body .list {
+  color: var(--color-body);
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.collapsible .list__item {
+  margin-bottom: 2rem;
+}
+
+.collapsible__arrow {
+  transform: rotate(-90deg);
+  transition: transform 0.3s;
+}
+
+.collapsible--expanded .collapsible__arrow {
+  transform: rotate(0);
+  /* transition: rotate 3s; */
+}
+
+.collapsible--expanded .collapsible__body {
+  max-height: 100vh;
+  opacity: 1;
+}
