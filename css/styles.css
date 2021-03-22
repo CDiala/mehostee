@@ -734,3 +734,64 @@ a {
   max-height: 100vh;
   opacity: 1;
 }
+
+/* Blocks */
+.block {
+  --block-padding: 6rem;
+  padding: var(--block-padding) 2rem;
+}
+
+.block__header {
+  text-align: center;
+}
+
+.block__heading {
+  margin-top: 0;
+  text-transform: capitalize;
+}
+
+.block--dark {
+  background-color: #000;
+  color: var(--color-plain);
+}
+
+.block--white {
+  background: rgb(63, 94, 251);
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(255, 56, 97, 1) 77%
+  );
+}
+
+.block--dark .block__heading {
+  color: var(--color-plain);
+}
+
+.block--skew-right {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+  padding-bottom: calc(var(--block-padding) + 4rem);
+}
+
+.block--skew-left {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+  padding-bottom: calc(var(--block-padding) + 4rem);
+}
+
+.block--skew-top-right {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+  /* padding-bottom: calc(var(--block-padding) + 4rem); */
+}
+
+.block--skew-top-left {
+  clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 100%);
+  position: relative;
+  top: -6rem;
+  padding-top: calc(var(--block-padding) + 4rem);
+  /* z-index: -5; */
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+}
