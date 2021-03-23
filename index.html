@@ -13,20 +13,15 @@
 </head>
 
 <body>
-    <section class="block block--dark block--skew-left hero">
-        <div class="container grid grid--cols-2">
-            <header class="block__header">
-                <h1 class="block__heading">cloud hosting for pros</h1>
-                <p>Deploy your website in less than 60 seconds</p>
-                <a class="button button--accent button--large">get started</a>
-            </header>
-            <picture>
-                <source type="image/webp" srcset="images/banner.webp 1x, images/banner@2x.webp 2x">
-                <source type="image/png" srcset="images/banner.png 1x, images/banner@2x.png 2x">
-                <img class="hero__image" src="images/banner.png" alt="">
-            </picture>
-        </div>
-    </section>
+
+    <div class="input-group">
+        <input type="text" class="input input--shadow" placeholder="Enter Domain name here ...">
+        <button class="button button--accent button--small button--block">
+            <svg class="icon icon--primary icon--small">
+                <use xlink:href="images/sprite.svg#search"></use>
+            </svg> <span class="insert-space">search</span>
+        </button>
+    </div>
 
     <script src="js/main.js"></script>
 </body>
