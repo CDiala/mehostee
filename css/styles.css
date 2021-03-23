@@ -303,10 +303,9 @@ a {
   border-radius: 50px;
   border: 0;
   color: var(--color-heading);
-  font-size: 2rem;
-  /* margin: 5rem 5rem; */
+  font-size: 1.8rem;
   outline: 0; /* shorthand form of outline-style et al */
-  padding: 1.5rem 1.5rem 1.5rem 5rem;
+  padding: 1.5rem 0.5rem 1.5rem 4rem;
   /*width: 100%; /*temp sizing to see how the style looks*/
 }
 
@@ -315,12 +314,8 @@ a {
   font-weight: 200;
 }
 
-.input--shadow {
-  box-shadow: 0 0 35px rgba(0, 0, 0, 0.2);
-}
-
 .input-group .button {
-  margin: 0.5rem;
+  margin: 0.5rem 0.5rem 0.5rem 0;
   width: auto;
 }
 
@@ -339,7 +334,11 @@ a {
   display: flex;
   margin: 2rem auto;
   max-width: 670px;
-  /* width: 100%; */
+  width: 100%;
+}
+
+.input-group--shadow {
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.2);
 }
 
 .input-group .input {
@@ -765,12 +764,13 @@ a {
 }
 
 .block--white {
-  background: rgb(63, 94, 251);
+  background: var(--color-plain);
+  /* background: rgb(63, 94, 251);
   background: radial-gradient(
     circle,
     rgba(63, 94, 251, 1) 0%,
     rgba(255, 56, 97, 1) 77%
-  );
+  ); */
 }
 
 .block--dark .block__heading {
@@ -908,4 +908,32 @@ a {
   /* .hero .button--large {
     margin-top: 4rem;
   } */
+}
+
+/* domain */
+.block-domain__prices {
+  font-size: 2rem;
+  font-weight: 600;
+  row-gap: 5rem;
+}
+
+.domain__subnote {
+  margin: 3rem 0 4rem;
+}
+
+.block-domain__prices {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.domain .input-group {
+  margin-bottom: 4rem;
+  max-width: 67rem;
+}
+
+@media screen and (min-width: 768px) {
+  .block-domain__prices {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    margin: auto;
+    max-width: 70rem;
+  }
 }
