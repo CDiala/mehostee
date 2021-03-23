@@ -36,6 +36,7 @@ h4,
 h5,
 h6 {
   color: var(--color-heading);
+  line-height: 1.2;
   margin-bottom: 1rem;
 }
 
@@ -267,8 +268,9 @@ a {
   color: var(--color-plain);
 }
 
-/* .button--large {
-  width: 40rem;
+.button--large {
+  padding: 2.8rem 14rem;
+  /* width: 40rem; */
 }
 
 .button--medium {
@@ -279,7 +281,7 @@ a {
 .button--small {
   font-size: 1.5rem;
   width: 17.5rem;
-} */
+}
 
 .button--block {
   align-items: center;
@@ -532,7 +534,9 @@ a {
 
 /* grids */
 .grid {
+  align-items: center;
   display: grid;
+  justify-items: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -770,24 +774,24 @@ a {
 
 .block--skew-right {
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
-  padding-bottom: calc(var(--block-padding) + 4rem);
+  padding-bottom: calc(var(--block-padding) + 8rem);
 }
 
 .block--skew-left {
   clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
-  padding-bottom: calc(var(--block-padding) + 4rem);
+  padding-bottom: calc(var(--block-padding) + 8rem);
 }
 
 .block--skew-top-right {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
-  /* padding-bottom: calc(var(--block-padding) + 4rem); */
+  clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0% 100%);
+  padding-top: calc(var(--block-padding) + 8rem);
 }
 
 .block--skew-top-left {
   clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 100%);
   position: relative;
   top: -6rem;
-  padding-top: calc(var(--block-padding) + 4rem);
+  padding-top: calc(var(--block-padding) + 8rem);
   /* z-index: -5; */
 }
 
@@ -856,4 +860,47 @@ a {
     border: 0;
     margin-bottom: 0;
   }
+}
+
+/* Hero */
+.hero {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+.hero__image {
+  width: 100%;
+}
+
+.hero p {
+  color: var(--color-body);
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  margin: 2rem 0 5rem;
+}
+
+/* .hero > .button--large {
+  margin-top: 4.5rem;
+} */
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 0;
+  }
+
+  .hero .button--large {
+    padding: 2.5rem 4rem;
+  }
+
+  .hero .block__header {
+    text-align: left;
+  }
+
+  .hero .block__heading {
+    font-size: 8rem;
+    line-height: 1;
+  }
+
+  /* .hero .button--large {
+    margin-top: 4rem;
+  } */
 }
