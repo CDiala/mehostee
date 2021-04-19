@@ -948,7 +948,7 @@ a {
 /* plan block */
 
 .block-plan .grid {
-  gap: 8rem;
+  gap: 8rem 4rem;
 }
 
 .block-plan .plan--popular {
@@ -992,7 +992,7 @@ a {
   } */
 
   .block-plan .plan {
-    /* margin: 2rem auto; */
+    margin: 2rem auto;
     /* max-width: 38rem; */
     /* width: minmax(10rem, 20rem); */
   }
