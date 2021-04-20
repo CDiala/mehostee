@@ -18,6 +18,11 @@
 }
 
 /* Typography */
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-plain);
+}
+
 html {
   font-size: 62.5%;
 }
@@ -50,6 +55,7 @@ h2 {
 
 h3 {
   font-size: 3rem;
+  font-weight: 500;
 }
 
 p {
@@ -456,6 +462,7 @@ a {
 /* Media */
 .media {
   display: flex;
+  margin-bottom: 3rem;
 }
 
 .media__title {
@@ -780,30 +787,32 @@ a {
   ); */
 }
 
-.block--dark .block__heading {
+.block--dark h1,
+.block--dark h2,
+.block--dark h3 {
   color: var(--color-plain);
 }
 
 .block--skew-right {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
-  padding-bottom: calc(var(--block-padding) + 8rem);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 95%);
+  padding-bottom: calc(var(--block-padding) + 3rem);
 }
 
 .block--skew-left {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
-  padding-bottom: calc(var(--block-padding) + 8rem);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
+  padding-bottom: calc(var(--block-padding) + 3rem);
 }
 
 .block--skew-top-right {
-  clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0% 100%);
-  padding-top: calc(var(--block-padding) + 8rem);
+  clip-path: polygon(0% 0%, 100% 5%, 100% 100%, 0% 100%);
+  padding-top: calc(var(--block-padding) + 3rem);
 }
 
 .block--skew-top-left {
-  clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 5%, 100% 0%, 100% 100%, 0% 100%);
   position: relative;
   top: -6rem;
-  padding-top: calc(var(--block-padding) + 8rem);
+  padding-top: calc(var(--block-padding) + 3rem);
   /* z-index: -5; */
 }
 
@@ -875,10 +884,6 @@ a {
 }
 
 /* Hero */
-.hero {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
-}
-
 .hero__image {
   width: 100%;
 }
@@ -1019,5 +1024,43 @@ a {
 @media screen and (min-width: 768px) {
   .feature:nth-last-of-type(even) .feature__content {
     order: 2;
+  }
+}
+
+/* Showcase Block */
+.block-showcase h2 {
+  margin-bottom: 4rem;
+}
+
+.block-showcase p {
+  color: var(--color-body);
+}
+
+.block-showcase .media:first-of-type {
+  margin-top: 4rem;
+}
+
+.block-showcase__image {
+  border-radius: 25px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .block-showcase .grid {
+    grid-template-columns: repeat(2, 50%);
+  }
+
+  .block-showcase picture {
+    justify-self: end;
+  }
+
+  /* .block-showcase .media, */
+  .block-showcase .media:first-of-type {
+    margin-top: 0;
+  }
+
+  .block-showcase__image {
+    max-width: 700px;
+    width: auto;
   }
 }
