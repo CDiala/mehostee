@@ -765,6 +765,7 @@ a {
 
 .block__header {
   text-align: center;
+  margin-bottom: 4rem;
 }
 
 .block__heading {
@@ -1063,4 +1064,10 @@ a {
     max-width: 700px;
     width: auto;
   }
+}
+
+/* testimonial block */
+.block-testimonial img {
+  margin: 0 auto;
+  /* max-width: inherit; */
 }

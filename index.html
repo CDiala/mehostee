@@ -13,69 +13,53 @@
 </head>
 
 <body>
-
-    <section class="block block--dark block--skew-right  block-showcase">
+    <section class="block-testimonial">
         <header class="block__header">
-            <h2>
-                User-Friendly Control Panel
-            </h2>
+            <h2>What our Customers are Saying</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda enim a, natus quis eaque iusto.</p>
         </header>
-        <div class="container grid grid--cols-2">
-            <picture>
-                <source type="image/webp" srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x">
-                <source type="image/png" srcset="images/ipad.png 1x, images/ipad@2x.png 2x">
-                <img class="block-showcase__image" src="images/ipad.png" alt="">
-            </picture>
-            <ul class="list">
-                <li>
-                    <div class="media">
-                        <div class="media__image">
-                            <svg class="icon icon--primary">
-                                <use xlink:href="images/sprite.svg#snap"></use>
+        <div class="container">
+            <div class="card testimonial" style=" margin: 2rem;">
+                <div class="grid grid--cols-2">
+                    <div class="testimonial__image">
+                        <img src="images/testimonial.jpg" alt="a happy client">
+                        <span class="icon-container icon-container--accent">
+                            <svg class="icon icon--plain icon--small">
+                                <use xlink:href="images/sprite.svg#quotes"></use>
                             </svg>
-                        </div>
-                        <div class="media__body">
-                            <h3 class="media__title">Easy Start & Managed Updates</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum quo natus beatae
-                                obcaecati
-                                officiis! Voluptatum, magni officiis? Officia, provident corporis!</p>
-                        </div>
+                        </span>
                     </div>
-                </li>
-                <li>
-                    <div class="media">
-                        <div class="media__image">
-                            <svg class="icon icon--primary">
-                                <use xlink:href="images/sprite.svg#growth"></use>
-                            </svg>
-                        </div>
-                        <div class="media__body">
-                            <h3 class="media__title">Staging, Git & WP-CLI</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum quo natus beatae
-                                obcaecati
-                                officiis! Voluptatum, magni officiis? Officia, provident corporis!</p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="media">
-                        <div class="media__image">
-                            <svg class="icon icon--primary">
-                                <use xlink:href="images/sprite.svg#wordpress"></use>
-                            </svg>
-                        </div>
-                        <div class="media__body">
-                            <h3 class="media__title">Dynamic Caching & More</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum quo natus beatae
-                                obcaecati
-                                officiis! Voluptatum, magni officiis? Officia, provident corporis!</p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+                    <blockquote class="quote">
+                        <q class="quote__body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde iure odit suscipit at
+                            accusamus
+                            amet
+                            ad deleniti vero? Non dolor suscipit repellendus temporibus sit, laborum provident omnis
+                            amet
+                            autem
+                            et!
+                        </q>
+                        <footer class="quote__footer">
+                            <div class="media">
+                                <div class="media__image quote__image">
+                                    <svg class="icon icon--primary">
+                                        <use xlink:href="images/sprite.svg#line"></use>
+                                    </svg>
+                                </div>
+                                <div class="media__body quote__author__details">
+                                    <h3 class="media__title quote__author">
+                                        jhone lumeo
+                                    </h3>
+                                    <p class="quote__owner__company">ABC Company CEO</p>
+                                </div>
+                            </div>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
         </div>
-
     </section>
+
 
     <script src="js/main.js"></script>
 </body>
