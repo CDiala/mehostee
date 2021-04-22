@@ -12,9 +12,34 @@
 //   collapseIcon.parentElement.classList.toggle("collapsible--expanded");
 // })
 
-const navMenuCollapsed = document.querySelector(".nav__menu");
+
+// toggle the nav menu
+try {
+  const navMenuCollapsed = document.querySelector(".nav__menu");
 // console.log(navMenuCollapsed);
 // console.log(navMenuCollapsed.parentElement.classList);
-navMenuCollapsed.addEventListener("click", function() {
+  navMenuCollapsed.addEventListener("click", function() {
   navMenuCollapsed.parentElement.classList.toggle("collapsible--expanded");
 })
+
+} catch (error) {
+  
+}
+
+
+// toggle the collapsibles
+try {
+  const collapsibles = document.querySelectorAll(".collapsible");
+  console.log(collapsibles);
+  collapsibles.forEach((item) => {
+    console.log(item.classList.value);
+    // if (item.classList.value.includes("collapsible__header")) {
+      item.addEventListener("click", function() {
+        // item.parentElement.parentElement.classList.toggle("collapsible--expanded")
+        item.classList.toggle("collapsible--expanded")
+      })
+    // }
+  });
+} catch (error) {
+  
+}

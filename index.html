@@ -13,52 +13,111 @@
 </head>
 
 <body>
-    <section class="block-testimonial">
-        <header class="block__header">
-            <h2>What our Customers are Saying</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda enim a, natus quis eaque iusto.</p>
-        </header>
-        <div class="container">
-            <div class="card testimonial" style=" margin: 2rem;">
-                <div class="grid grid--cols-2">
-                    <div class="testimonial__image">
-                        <img src="images/testimonial.jpg" alt="a happy client">
-                        <span class="icon-container icon-container--accent">
-                            <svg class="icon icon--plain icon--small">
-                                <use xlink:href="images/sprite.svg#quotes"></use>
-                            </svg>
-                        </span>
-                    </div>
-                    <blockquote class="quote">
-                        <q class="quote__body">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde iure odit suscipit at
-                            accusamus
-                            amet
-                            ad deleniti vero? Non dolor suscipit repellendus temporibus sit, laborum provident omnis
-                            amet
-                            autem
-                            et!
-                        </q>
-                        <footer class="quote__footer">
-                            <div class="media">
-                                <div class="media__image quote__image">
-                                    <svg class="icon icon--primary">
-                                        <use xlink:href="images/sprite.svg#line"></use>
-                                    </svg>
-                                </div>
-                                <div class="media__body quote__author__details">
-                                    <h3 class="media__title quote__author">
-                                        jhone lumeo
-                                    </h3>
-                                    <p class="quote__owner__company">ABC Company CEO</p>
-                                </div>
-                            </div>
-                        </footer>
-                    </blockquote>
+
+    <footer class="block block--dark block-footer">
+        <div class="container grid grid--cols-5">
+            <section class="collapsible collapsible--primary collapsible--expanded footer-section">
+                <header class="collapsible__header">
+                    <h2 class="collapsible__title footer__header">
+                        products
+                    </h2>
+                    <svg class="icon icon--primary collapsible__arrow">
+                        <use xlink:href="images/sprite.svg#chevron">
+                        </use>
+                    </svg>
+                </header>
+                <div class="collapsible__body">
+                    <ul class="list ">
+                        <li class="list__item">
+                            <a href="#">Website Hosting</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#">Free Automated WordPress</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#">Migrations</a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
+            </section>
+            <section class="collapsible collapsible--primary footer-section">
+                <header class="collapsible__header">
+                    <h2 class="collapsible__title footer__header">
+                        company
+                    </h2>
+                    <svg class="icon icon--primary collapsible__arrow">
+                        <use xlink:href="images/sprite.svg#chevron">
+                        </use>
+                    </svg>
+                </header>
+                <div class="collapsible__body">
+                    <ul class="list ">
+                        <li class="list__item">
+                            <a href="#">About</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#">Affiliates</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="collapsible collapsible--primary footer-section">
+                <header class="collapsible__header">
+                    <h2 class="collapsible__title footer__header">
+                        support
+                    </h2>
+                    <svg class="icon icon--primary collapsible__arrow">
+                        <use xlink:href="images/sprite.svg#chevron">
+                        </use>
+                    </svg>
+                </header>
+                <div class="collapsible__body">
+                    <ul class="list ">
+                        <li class="list__item">
+                            <a href="#">Contact</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#">knowledge base</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="collapsible collapsible--primary footer-section">
+                <header class="collapsible__header">
+                    <h2 class="collapsible__title footer__header">
+                        domains
+                    </h2>
+                    <svg class="icon icon--primary collapsible__arrow">
+                        <use xlink:href="images/sprite.svg#chevron">
+                        </use>
+                    </svg>
+                </header>
+                <div class="collapsible__body">
+                    <ul class="list ">
+                        <li class="list__item">
+                            <a href="#">Domain checker</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#">Domain transfer</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#">Free domain</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="footer__brand">
+                <img src="images/logo.png" alt="">
+                <p class="footer__copyright">Copyright 2020 Chibuzo Diala</p>
+            </section>
         </div>
-    </section>
+    </footer>
 
 
     <script src="js/main.js"></script>
