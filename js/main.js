@@ -12,6 +12,14 @@
 //   collapseIcon.parentElement.classList.toggle("collapsible--expanded");
 // })
 
+const collapsibles = document.querySelectorAll(".nav__list");
+collapsibles.forEach((item) => {
+  console.log(item.parentElement.classList);
+  item.addEventListener("click", function () {
+    this.parentElement.classList.toggle("collapsible--expanded");
+  })
+});
+
 
 // toggle the nav menu
 try {
@@ -29,7 +37,7 @@ try {
 
 // toggle the collapsibles
 try {
-  const collapsibles = document.querySelectorAll(".collapsible");
+  const collapsibles = document.querySelectorAll("section.collapsible");
   console.log(collapsibles);
   collapsibles.forEach((item) => {
     console.log(item.classList.value);

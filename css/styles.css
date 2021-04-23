@@ -148,7 +148,7 @@ a {
 /* Lists */
 
 .list {
-  color: var(--color-heading);
+  /* color: var(--color-heading); */
   font-size: 2.4rem;
   list-style: none;
   padding-left: 0;
@@ -188,8 +188,8 @@ a {
 }
 
 .icon--small {
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  width: 20px;
 }
 
 .insert-space {
@@ -224,7 +224,7 @@ a {
   font-weight: 600; /*used 600*/
   margin: 0.5rem 0;
   outline-style: none; /*omitted*/
-  padding: 1.8rem 3rem; /*used 2rem 3rem*/
+  padding: 1.2rem 4vw; /*used 2rem 3rem*/
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -275,7 +275,8 @@ a {
 }
 
 .button--large {
-  padding: 2.8rem 14rem;
+  /* padding: 2.8rem 14rem; */
+  display: inline;
   /* width: 40rem; */
 }
 
@@ -294,6 +295,16 @@ a {
   display: inline-flex;
   justify-content: center;
   width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .button {
+    padding: 1.8rem 4rem;
+  }
+
+  .button--small {
+    font-size: 1.8rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -485,6 +496,7 @@ a {
   font-style: italic;
   font-weight: 400;
   line-height: 1.3;
+  margin: 2rem;
 }
 
 .quote__body {
@@ -574,6 +586,11 @@ a {
   padding: 3rem;
 }
 
+.testimonial__image {
+  justify-self: center;
+  max-width: 413px;
+}
+
 .testimonial__image > img {
   width: 100%;
 }
@@ -615,8 +632,8 @@ a {
     font-size: 2rem;
   }
 
-  .testimonial .quote {
-    margin-left: 6rem;
+  .quote {
+    margin-left: 50px;
   }
 }
 
@@ -624,8 +641,10 @@ a {
 
 .callout {
   border: 2px solid dodgerblue;
-  border-radius: 0.8rem;
+  border-radius: 0.5rem;
+  bottom: -4rem;
   padding: 2.5rem;
+  position: relative;
   text-align: center;
 }
 
@@ -696,9 +715,9 @@ a {
   padding: 1rem;
 }
 
-.collapsible--primary {
-  /* background-color: black; */
-}
+/* .collapsible--primary {
+  background-color: black;
+} */
 
 .collapsible__header {
   align-items: center;
@@ -832,6 +851,10 @@ a {
   padding: 0 1rem;
 }
 
+.app__logo {
+  vertical-align: middle;
+}
+
 .nav__list {
   margin: 0; /*not used*/
   width: 100%;
@@ -841,16 +864,18 @@ a {
   border-bottom: 1px solid #222;
   margin-bottom: 1.5rem;
   padding: 0.5rem 2rem;
+  text-align: center;
 }
 
 .nav__item a {
   color: var(--color-body);
   display: block;
-  transition: color 0.3s;
+  transition: color 0.3s, transform 0.3s;
 }
 
 .nav__item a:hover {
   color: var(--color-plain);
+  transform: scale(1.2);
 }
 
 .nav__menu {
@@ -886,6 +911,8 @@ a {
 
 /* Hero */
 .hero__image {
+  /* position: relative;
+  top: -5rem; */
   width: 100%;
 }
 
@@ -906,10 +933,13 @@ a {
   }
 
   .hero .button--large {
+    /* display: inline-block; */
     padding: 2.5rem 4rem;
   }
 
   .hero .block__header {
+    align-self: center;
+    margin-top: 5rem;
     text-align: left;
   }
 
@@ -925,17 +955,16 @@ a {
 
 /* domain */
 .block-domain__prices {
+  color: var(--color-heading);
   font-size: 2rem;
   font-weight: 600;
-  row-gap: 5rem;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 4rem;
+  text-align: center;
 }
 
 .domain__subnote {
   margin: 3rem 0 4rem;
-}
-
-.block-domain__prices {
-  grid-template-columns: repeat(3, 1fr);
 }
 
 .domain .input-group {
@@ -954,11 +983,11 @@ a {
 /* plan block */
 
 .block-plan .grid {
-  gap: 8rem 4rem;
+  gap: 8rem 2rem;
 }
 
-.block-plan .plan--popular {
-  margin: 0.5rem 4rem;
+.block-plan .plan {
+  margin: 0.5rem 2.5rem;
 }
 
 /* .plan-block {
@@ -998,7 +1027,7 @@ a {
   } */
 
   .block-plan .plan {
-    margin: 2rem auto;
+    margin: 2rem;
     /* max-width: 38rem; */
     /* width: minmax(10rem, 20rem); */
   }
@@ -1006,6 +1035,7 @@ a {
 
 /* features */
 .feature {
+  align-items: center;
   gap: 4rem 2rem;
   margin: 12rem 0;
 }
@@ -1064,12 +1094,46 @@ a {
     max-width: 700px;
     width: auto;
   }
+
+  .block-showcase .list {
+    font-size: 1.6rem;
+  }
 }
 
 /* testimonial block */
+.block-testimonial .container {
+  margin: 2rem;
+}
+
 .block-testimonial img {
   margin: 0 auto;
   /* max-width: inherit; */
+}
+
+.block-testimonial .block__header p {
+  padding: 0 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .quote {
+    margin-top: 0;
+  }
+
+  .block-testimonial .container {
+    margin: 2rem;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .quote {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .block-testimonial .container {
+    margin: 2rem auto;
+  }
 }
 
 /* footer block */
