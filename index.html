@@ -5,11 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Deploy your websites in less than 60seconds">
+    <meta property="og:title" content="Moshify...">
+    <meta property="og:description" content="Deploy your websites in less than 60seconds">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://">
+    <meta property="og:url" content="https://moshified">
+    <title>Moshified - Go Online for Just $9</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -20,7 +27,7 @@
                 <img class="app__logo" src="images/logo.svg" alt="website logo">
             </a>
             <svg class="icon icon--plain nav__menu">
-                <use xlink:href="images/sprite.svg#menu"></use>
+                <use href="images/sprite.svg#menu"></use>
             </svg>
             <ul class="list nav__list collapsible__body">
                 <li class="nav__item"><a href="#">Hosting</a></li>
@@ -56,7 +63,7 @@
                 <input type="text" class="input" placeholder="Enter Domain name here ...">
                 <button class="button button--accent button--small button--block">
                     <svg class="icon icon--primary icon--small">
-                        <use xlink:href="images/sprite.svg#search"></use>
+                        <use href="images/sprite.svg#search"></use>
                     </svg> <span class="insert-space">search</span>
                 </button>
             </div>
@@ -91,7 +98,6 @@
                             <li class="list__item">3 GB RAM</li>
                         </ul>
                         <button class="button button--outline button--block">Buy Now</button>
-                        <!-- <a href="#" class="button button--primary button--large button--block">Get One Free</a> -->
                     </div>
                 </div>
             </div>
@@ -112,7 +118,6 @@
                             <li class="list__item">3 GB RAM</li>
                         </ul>
                         <button class="button button--outline button--block">Buy Now</button>
-                        <!-- <a href="#" class="button button--primary button--large button--block">Get One Free</a> -->
                     </div>
                 </div>
             </div>
@@ -133,7 +138,6 @@
                             <li class="list__item">3 GB RAM</li>
                         </ul>
                         <button class="button button--outline button--block">Buy Now</button>
-                        <!-- <a href="#" class="button button--primary button--large button--block">Get One Free</a> -->
                     </div>
                 </div>
             </div>
@@ -144,11 +148,11 @@
             <h2>Host on the Cloud to Keep Growing</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, blanditiis.</p>
         </header>
-        <article class="grid grid--cols-2 feature">
+        <article class="grid grid--cols-2 feature" data-aos="zoom-in-up" data-aos-duration="800">
             <div class="feature__content">
                 <span class="icon-container">
                     <svg class="icon icon--primary">
-                        <use xlink:href="images/sprite.svg#easy"></use>
+                        <use href="images/sprite.svg#easy"></use>
                     </svg>
                 </span>
                 <div>
@@ -166,10 +170,10 @@
             </picture>
         </article>
         <article class="grid grid--cols-2 feature">
-            <div class="feature__content">
+            <div class="feature__content" data-aos="fade-up">
                 <span class="icon-container">
                     <svg class="icon icon--primary">
-                        <use xlink:href="images/sprite.svg#easy"></use>
+                        <use href="images/sprite.svg#easy"></use>
                     </svg>
                 </span>
                 <div>
@@ -180,17 +184,17 @@
                     <a href="#" class="link-arrow">Learn More</a>
                 </div>
             </div>
-            <picture>
+            <picture data-aos="fade-up">
                 <source type="image/webp" srcset="images/fast.webp 1x, images/fast@2x.webp 2x">
                 <source type="image/jpg" srcset="images/fast.jpg 1x, images/fast@2x.jpg 2x">
                 <img class="feature__image" src="./images/fast.jpg" alt="">
             </picture>
         </article>
-        <article class="grid grid--cols-2 feature">
+        <article class="grid grid--cols-2 feature" data-aos="fade-up">
             <div class="feature__content">
                 <span class="icon-container">
                     <svg class="icon icon--primary">
-                        <use xlink:href="images/sprite.svg#easy"></use>
+                        <use href="images/sprite.svg#easy"></use>
                     </svg>
                 </span>
                 <div>
@@ -208,10 +212,10 @@
             </picture>
         </article>
         <article class="grid grid--cols-2 feature">
-            <div class="feature__content">
+            <div class="feature__content" data-aos="fade-up">
                 <span class="icon-container">
                     <svg class="icon icon--primary">
-                        <use xlink:href="images/sprite.svg#easy"></use>
+                        <use href="images/sprite.svg#easy"></use>
                     </svg>
                 </span>
                 <div>
@@ -222,7 +226,7 @@
                     <a href="#" class="link-arrow">Learn More</a>
                 </div>
             </div>
-            <picture>
+            <picture data-aos="fade-up">
                 <source type="image/webp" srcset="images/support.webp 1x, images/support@2x.webp 2x">
                 <source type="image/jpg" srcset="images/support.jpg 1x, images/support@2x.jpg 2x">
                 <img class="feature__image" src="./images/support.jpg" alt="">
@@ -242,11 +246,11 @@
                 <img class="block-showcase__image" src="images/ipad.png" alt="">
             </picture>
             <ul class="list">
-                <li>
+                <li data-aos="zoom-in">
                     <div class="media">
                         <div class="media__image">
                             <svg class="icon icon--primary">
-                                <use xlink:href="images/sprite.svg#snap"></use>
+                                <use href="images/sprite.svg#snap"></use>
                             </svg>
                         </div>
                         <div class="media__body">
@@ -257,11 +261,11 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li data-aos="zoom-in">
                     <div class="media">
                         <div class="media__image">
                             <svg class="icon icon--primary">
-                                <use xlink:href="images/sprite.svg#growth"></use>
+                                <use href="images/sprite.svg#growth"></use>
                             </svg>
                         </div>
                         <div class="media__body">
@@ -272,11 +276,11 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li data-aos="zoom-in">
                     <div class="media">
                         <div class="media__image">
                             <svg class="icon icon--primary">
-                                <use xlink:href="images/sprite.svg#wordpress"></use>
+                                <use href="images/sprite.svg#wordpress"></use>
                             </svg>
                         </div>
                         <div class="media__body">
@@ -302,7 +306,7 @@
                         <img src="images/testimonial.jpg" alt="a happy client">
                         <span class="icon-container icon-container--accent">
                             <svg class="icon icon--plain icon--small">
-                                <use xlink:href="images/sprite.svg#quotes"></use>
+                                <use href="images/sprite.svg#quotes"></use>
                             </svg>
                         </span>
                     </div>
@@ -320,7 +324,7 @@
                             <div class="media">
                                 <div class="media__image quote__image">
                                     <svg class="icon icon--primary">
-                                        <use xlink:href="images/sprite.svg#line"></use>
+                                        <use href="images/sprite.svg#line"></use>
                                     </svg>
                                 </div>
                                 <div class="media__body quote__author__details">
@@ -353,15 +357,15 @@
     <footer class="block block--dark block-footer">
         <div class="container grid grid--cols-5">
             <section class="collapsible collapsible--primary collapsible--expanded footer-section">
-                <header class="collapsible__header">
+                <div class="collapsible__header">
                     <h2 class="collapsible__title footer__header">
                         products
                     </h2>
                     <svg class="icon icon--primary collapsible__arrow">
-                        <use xlink:href="images/sprite.svg#chevron">
+                        <use href="images/sprite.svg#chevron">
                         </use>
                     </svg>
-                </header>
+                </div>
                 <div class="collapsible__body">
                     <ul class="list ">
                         <li class="list__item">
@@ -377,15 +381,15 @@
                 </div>
             </section>
             <section class="collapsible collapsible--primary footer-section">
-                <header class="collapsible__header">
+                <div class="collapsible__header">
                     <h2 class="collapsible__title footer__header">
                         company
                     </h2>
                     <svg class="icon icon--primary collapsible__arrow">
-                        <use xlink:href="images/sprite.svg#chevron">
+                        <use href="images/sprite.svg#chevron">
                         </use>
                     </svg>
-                </header>
+                </div>
                 <div class="collapsible__body">
                     <ul class="list ">
                         <li class="list__item">
@@ -401,15 +405,15 @@
                 </div>
             </section>
             <section class="collapsible collapsible--primary footer-section">
-                <header class="collapsible__header">
+                <div class="collapsible__header">
                     <h2 class="collapsible__title footer__header">
                         support
                     </h2>
                     <svg class="icon icon--primary collapsible__arrow">
-                        <use xlink:href="images/sprite.svg#chevron">
+                        <use href="images/sprite.svg#chevron">
                         </use>
                     </svg>
-                </header>
+                </div>
                 <div class="collapsible__body">
                     <ul class="list ">
                         <li class="list__item">
@@ -425,15 +429,15 @@
                 </div>
             </section>
             <section class="collapsible collapsible--primary footer-section">
-                <header class="collapsible__header">
+                <div class="collapsible__header">
                     <h2 class="collapsible__title footer__header">
                         domains
                     </h2>
                     <svg class="icon icon--primary collapsible__arrow">
-                        <use xlink:href="images/sprite.svg#chevron">
+                        <use href="images/sprite.svg#chevron">
                         </use>
                     </svg>
-                </header>
+                </div>
                 <div class="collapsible__body">
                     <ul class="list ">
                         <li class="list__item">
@@ -448,13 +452,17 @@
                     </ul>
                 </div>
             </section>
-            <section class="footer__brand">
+            <div class="footer__brand">
                 <img src="images/logo.png" alt="">
                 <p class="footer__copyright">Copyright 2020 Chibuzo Diala</p>
-            </section>
+            </div>
         </div>
     </footer>
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

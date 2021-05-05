@@ -405,6 +405,7 @@ a {
 
 /* plans */
 .plan {
+  /* transition: transform 0.2s ease-out; */
   transition: transform 0.2s ease-out;
 }
 .plan__name {
@@ -566,10 +567,15 @@ a {
 .grid {
   /* align-items: center; */
   display: grid;
+  /* overflow: unset; */
   /* justify-items: center; */
 }
 
 @media screen and (min-width: 768px) {
+  /* .grid {
+    overflow: unset;
+  } */
+
   .grid--cols-2 {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1014,7 +1020,9 @@ a {
 }
 
 .plan--popular:hover {
+  /* justify-self: center; */
   transform: scale(1.15);
+  /* width: 80%; */
 }
 
 @media screen and (min-width: 768px) {
@@ -1027,15 +1035,25 @@ a {
   } */
 
   .block-plan .plan {
-    margin: 2rem;
+    /* margin: 2rem; */
     /* max-width: 38rem; */
     /* width: minmax(10rem, 20rem); */
   }
 }
 
+/* not working */
+@media screen and (max-width: 768px) and (min-width: 540px) {
+  .block-plan .plan,
+  .plan.plan--popular {
+    margin: 2rem auto;
+    max-width: 90%;
+    width: 60%;
+  }
+}
+
 /* features */
 .feature {
-  align-items: center;
+  /* align-items: center; */
   gap: 4rem 2rem;
   margin: 12rem 0;
 }
@@ -1222,5 +1240,12 @@ a {
 
   .footer__header {
     font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .block-plan .grid.grid--cols-3 {
+    /* .grid { */
+    overflow: hidden;
   }
 }
